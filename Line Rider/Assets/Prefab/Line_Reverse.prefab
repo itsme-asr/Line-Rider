@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2604445101886938461}
   - component: {fileID: 2604445101886938462}
   - component: {fileID: 2604445101886938463}
-  - component: {fileID: 2604445101886938448}
+  - component: {fileID: 2249898655500623863}
+  - component: {fileID: 3184404848528858587}
   m_Layer: 0
-  m_Name: LIne
+  m_Name: Line_Reverse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,15 +97,15 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 0.6415094, g: 0.23239583, b: 0.33333206, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 2699
+      ctime0: 9252
       ctime1: 65535
       ctime2: 0
       ctime3: 0
@@ -142,7 +143,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 2790885a3e4ae934c96a68f11b16b32f, type: 2}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
@@ -153,7 +154,25 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &2604445101886938448
+--- !u!252 &2249898655500623863
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2604445101886938449}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: -5
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
+--- !u!114 &3184404848528858587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

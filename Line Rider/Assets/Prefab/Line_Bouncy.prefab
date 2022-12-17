@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2604445101886938461}
   - component: {fileID: 2604445101886938462}
   - component: {fileID: 2604445101886938463}
-  - component: {fileID: 2249898655500623863}
-  - component: {fileID: 3184404848528858587}
+  - component: {fileID: 7970188377418146811}
+  - component: {fileID: 2604445101886938448}
   m_Layer: 0
-  m_Name: LIne_Boost
+  m_Name: Line_Bouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,13 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
+  - {x: -4.8994393, y: 1.0056055, z: 0}
+  - {x: -4.866469, y: 0.90669334, z: 0}
+  - {x: -3.9432905, y: -0.049455464, z: 0}
+  - {x: -0.44840074, y: -2.0276952, z: 0}
+  - {x: 1.9584572, y: -2.6211667, z: 0}
+  - {x: 3.0135188, y: -2.5222545, z: 0}
+  - {x: 3.804814, y: -1.9947243, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.09
@@ -97,15 +102,15 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.11091134, g: 0.7372549, b: 0.8773585, a: 1}
-      key1: {r: 0.14012098, g: 0.25521952, b: 0.9056604, a: 1}
+      key0: {r: 0.76952136, g: 0.98039216, b: 0.20971872, a: 1}
+      key1: {r: 0.89140844, g: 0.53333336, b: 0.03147021, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 19468
+      ctime0: 2699
       ctime1: 65535
       ctime2: 0
       ctime3: 0
@@ -141,20 +146,25 @@ EdgeCollider2D:
   m_GameObject: {fileID: 2604445101886938449}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2790885a3e4ae934c96a68f11b16b32f, type: 2}
+  m_Material: {fileID: 6200000, guid: d0047d552c2e90e47a0cdbf1e6d478d3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
+  - {x: -4.8994393, y: 1.0056055}
+  - {x: -4.866469, y: 0.90669334}
+  - {x: -3.9432905, y: -0.049455464}
+  - {x: -0.44840074, y: -2.0276952}
+  - {x: 1.9584572, y: -2.6211667}
+  - {x: 3.0135188, y: -2.5222545}
+  - {x: 3.804814, y: -1.9947243}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!252 &2249898655500623863
+--- !u!252 &7970188377418146811
 SurfaceEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,13 +176,13 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 8
+  m_Speed: 0
   m_SpeedVariation: 0
-  m_ForceScale: 0.1
+  m_ForceScale: 0
   m_UseContactForce: 0
-  m_UseFriction: 1
+  m_UseFriction: 0
   m_UseBounce: 1
---- !u!114 &3184404848528858587
+--- !u!114 &2604445101886938448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
