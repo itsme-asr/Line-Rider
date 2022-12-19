@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D col)
+    public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player")
         {
@@ -14,7 +14,7 @@ public class Finish : MonoBehaviour
         }
     }
 
-    private void levelComplete()
+    public void levelComplete()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
